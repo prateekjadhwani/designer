@@ -38,8 +38,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   define(['polymer-designer/async', 'uri'], (async, URI) => {
     'use strict';
 
-    const _openProjectUri = new URI('http://localhost:8080/api/openProject');
-    const _fileListingUri = 'http://localhost:8080/api/files/';
+    const _openProjectUri = new URI('http://designer-tool-prateekjadhwani.c9users.io:8080/api/openProject');
+    const _fileListingUri = 'http://designer-tool-prateekjadhwani.c9users.io:8080/api/files/';
 
     Polymer({
       is: 'designer-project-service-browser',
@@ -99,7 +99,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             let project = new BrowserProject(
                 this,
                 _fileListingUri,
-                `http://localhost:${port}/files/__project__/`,
+                `http://designer-tool-prateekjadhwani.c9users.io:${port}/files/__project__/`,
                 directory);
             return project;
           });
